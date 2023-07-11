@@ -61,28 +61,46 @@
 .feature-img-mdiv{
     display:flex;
     gap: 15px;
-    justify-content: center;
+    justify-content: center; 
+}
 
 
-    
-}
-.figure-img{
-    height: 464px;
-    height:514px;
-}
 .figure-img1{
     background-color: #F2DEE7;
     border-radius: 50% 50% 0% 0%;
     justify-content: center;
+    height: 540px;
+    width: 464px;
+    background-image: url(asset/pngwing-6.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .figure-img2{
     background-color: #D9EFF1;
     border-radius: 50% 50% 0% 0%;
+    justify-content: center;
+    height: 540px;
+    width: 464px;
+    background-image: url(asset/pngwing-5.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .figure-img3{
     background-color: #E3EBDB;
     border-radius: 50% 50% 0% 0%;
+    justify-content: center;
+    height: 540px;
+    width: 464px;
+    background-image: url(asset/pngwing-7.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
+
+.feature-btn1{
+    
+    color:rgb(197, 87, 87);
+}
+
 
 
 /* =========================Hotdeal Section===========================
