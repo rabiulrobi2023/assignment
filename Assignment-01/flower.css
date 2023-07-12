@@ -95,11 +95,15 @@
     background-position: bottom;
     background-repeat: no-repeat;
 }
-
-.feature-btn1{
-    
-    color:rgb(197, 87, 87);
+.feature-img-mdiv a{
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: bold;
 }
+
 
 
 
@@ -113,7 +117,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 70px 0px;
-    background-color: #a5bebe;
+    background-color: #f7ebeb;
 }
 .hotdeal-sec h1{
     font-size: 40px;
@@ -160,6 +164,58 @@
     justify-content: center;
 }
 
+/* =========================Bonus Section===========================
+============================================================== */
+.bonus-section{
+    
+    margin-top: 100px;
+    justify-content: center;
+    background-color: rgba(220, 231, 190, 0.384);
+    justify-content: space-around;
+}
+.bonus-section>h1{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size:40px;
+    color: #000000;
+}
+.b-img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.buy{
+    background-color: #E3EBDB;
+    border: 2px solid rgb(201, 195, 195);
+    border-radius: 8px;
+}
+
+.buy h1{
+    text-align: center;
+    margin:5px;
+    font-size: 24px;
+}
+
+.buy-button{
+    margin: auto;
+    padding: 10px 120px;
+    margin: 20px;
+    color: rgb(7, 101, 241);
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: #2521211a;
+    border: none;
+    font-weight: bold;
+}
+
+.b-img img{
+    widht: 310px;
+    height: 450px;
+}
+
 /* =========================Subscribe Section==========================
 ============================================================== */
 .subscribe-sec{
@@ -198,6 +254,7 @@
     width: 700px;
     border-radius: 8px;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 .form-button{
@@ -205,10 +262,11 @@
     padding:0px;
     height:64px;
     background-color: #E55473;
-    color:#D9EFF1;
+    color:#ffffff;
     font-size: 20px;
     padding:0px 10px;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 /* =========================Footer Section==========================
