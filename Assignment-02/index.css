@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* =============================Common Style===================================
+============================================================================ */
+
+
+/* ========Common Heading Style========= */
+.com-heading-stl{
+    font-size: 48px;
+}
+
+
+/* ========Common Peragraph Style========= */
+.com-para-stl{
+    font-size: 18px;
+    color: #534C64;
+}
+
+
+
+/* =============================Header Section Style=================================== */
+
+.nav-container{
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    padding:20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left{
+    width:50%;
+}
+.nav-left-container{
+    display: flex;
+    gap:30px;
+}
+.nav-logo{
+    width:86px;
+}
+
+.nav-right{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.nav-right a{
+    color:#534C64;
+    text-decoration: none;
+    font-size: 20px;
+}
+.youtube-icon{
+    color:red;
+}
+.tiktok-icon{
+    color:blueviolet;
+}
+.follow-btn-container{
+    display: flex;
+    gap:13px;
+    background-color: #E7E6E9;
+    border-radius: 8px;
+    padding:10px 15px;;
+}
+
+
+/* =============================Banner Section Style=================================== */
+.bnr-sec{
+    background-image: linear-gradient(90deg,#e2d1ed, #e9e8e8);
+    
+}
+.bnr-conti{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bnr-left{
+    width: 50%;
+    padding:70px;
+}
+.goat{
+    background-image: linear-gradient(180deg, #DA4CC3, #A554E1);
+    font-size: 95px;
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.bnr-icon-conti{
+    margin-top: 30px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap:10px;
+}
+.bnr-icon{
+    font-size: 20px;
+    color:red;
+    display:flex;
+    gap:10px;
+    text-align: center;
+}
+
+.bnr-btn{
+    display: flex;
+    margin-top: 30px;
+    gap:20px;
+
+}
+.bnr-btn-left{
+    padding:21px 40px;
+    background-color: #FF42A5;
+    color:white;
+    border:none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.bnr-btn-right{
+    padding:21px 40px;
+    background-color: #4EC5F7;
+    color:white;
+    border:none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.bnr-right img{
+    width:100%;
+}
+
+
+/* =============================Gamer Section Style=================================== */
+.gamer-sec{
+    background-color: #f6eef1;
+}
+.gamer-sec-conti{
+    display:flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 95px 0px;
+}
+.gamer-sec-left{
+    width:50%;
+    display: flex;
+    align-items: center;
+}
+
+.gamer-sec-left img{
+    width:100%;
+}
+.gamer-sec-right{
+    text-align: right;
+}
+.gamer-sec-right h1{
+    font-size: 48px;
+}
+.gamer-content-top{
+    display:block;
+    padding-left:50%;
+    margin:15px 0px;
+}.gamer-sec-right button{
+    padding:15px;
+    margin:10px 0px;
+}
+.gamer-content-bottom{
+    text-align: left;
+    width:120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left:85%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================Respnsive Design===================================
+===================================================================================*/
+
+                                /* ==For-Tablet== */
+@media screen and (max-width: 820px) {
+.nav-container{
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    padding-top: 50px;
+}
+.nav-left-container{
+    justify-content: center;
+}
+.bnr-btn-left{
+    padding:12px 20px;
+    font-size: 16px;
+}
+.bnr-btn-right{
+    padding:12px 20px;
+    font-size: 12px;
+}
+.goat{
+    font-size:40px;
+}
+.bnr-heading h2{
+    font-size: 28px;
+}
+.gamer-sec-conti{
+    flex-direction: column;
+    margin:auto
+}
+.gamer-sec-left{
+    width:100%;
+}
+.gamer-sec-right{
+    width:100%;
+    text-align: center;
+}
+.gamer-content-top{
+        padding:0px;
+
+}
+.gamer-content-bottom{
+    margin:auto;
+    padding:15px 0px 0px 0px;
+}
+
+
+}
+
+
+
+                                /* ==For-Mobile== */
+@media screen and (max-width: 425px) {
+    .nav-container{
+       flex-direction:column; 
+       gap:30px;
+       margin: auto;
+       width:100%;
+         
+    }
+
+    .nav-left{
+        flex-direction: column;
+        width:100%;
+        margin: auto;
+    }
+    .nav-left-container{
+        justify-content: center;
+    }
+    .nav-logo{
+        width:60px;
+    }
+    .nav-right{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bnr-sec{
+        margin-top:40px;
+    }
+
+    .bnr-conti{
+        flex-direction: column-reverse;
+        width:80%;
+        margin:auto
+    }
+    .bnr-left{
+        width: 100%;
+        margin: 30px auto;
+        padding:0px;
+    }
+    .bnr-right{
+        width: 100%;
+        margin: auto;
+    }
+    .bnr-right img{
+        width: 100%;
+        text-align: center;
+    }
+    .bnr-btn-left{
+        padding:12px 20px;
+        font-size: 16px;
+    }
+    .bnr-btn-right{
+        padding:12px 20px;
+        font-size: 12px;
+    }
+    .goat{
+        font-size:3dvb;
+    }
+    .bnr-heading h2{
+        font-size: 28px;
+    }
+
+    .gamer-sec-conti{
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+    }
+    .gamer-sec-left{
+        width:100%;
+    }
+    .gamer-sec-right{
+        width:100%;
+        text-align: center;
+    }
+    .gamer-content-top{
+        padding:0px;
+    }
+    .gamer-content-bottom{
+        margin:auto;
+        padding:15px 0px 0px 0px;
+    }
+    .gamer-h1-bottom{
+        font-size: ;
+
+    }
+
+}
