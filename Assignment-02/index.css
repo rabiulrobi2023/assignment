@@ -78,7 +78,8 @@
 
 /* =============================Banner Section Style=================================== */
 .bnr-sec{
-    background-image: linear-gradient(90deg,#e2d1ed, #e9e8e8);
+    background-image: linear-gradient(90deg,#c290e4, #cfc8c8);
+    height: 100vh;
     
 }
 .bnr-conti{
@@ -93,7 +94,7 @@
     padding:70px;
 }
 .goat{
-    background-image: linear-gradient(180deg, #DA4CC3, #A554E1);
+    background-image: linear-gradient(180deg, #c547b0, #7632aa);
     font-size: 95px;
     color: transparent;
     -webkit-background-clip: text;
@@ -563,6 +564,27 @@
    }
     .game-list-btn-conti img{
         width:20px;
+    }
+    .footer-menu a{
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .footer-menu{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:15px
+    }
+    .footer-icon
+    {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:5px;
+        align-items: center;
+        padding:0px;
+        margin: 0px;
+        justify-content:center;
+        text-align: center;
     }
 
 
