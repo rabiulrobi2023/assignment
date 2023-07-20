@@ -4,21 +4,16 @@
     margin: 0px;
     font-family: 'Work Sans', sans-serif;
 }
-
-
 /* =============================Common Style===================================
 ============================================================================ */
-
 
 /* ========Common Heading Style========= */
 .com-heading-stl{
     font-size: 48px;
 }
-
-
 /* ========Common Peragraph Style========= */
 .com-para-stl{
-    font-size: 18px;
+    font-size: 224px;
     color: #534C64;
 }
 
@@ -31,7 +26,6 @@
 }
 
 /* =============================Header Section Style=================================== */
-
 .nav-container{
     display: flex;
     max-width: 1440px;
@@ -47,19 +41,15 @@
     display: flex;
     gap:30px;
 }
-.nav-logo{
-    width:86px;
-}
-
 .nav-right{
     display: flex;
-    gap:10px;
+    gap:30px;
     align-items: center;
 }
 .nav-right a{
     color:#534C64;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 .youtube-icon{
     color:red;
@@ -69,17 +59,23 @@
 }
 .follow-btn-container{
     display: flex;
-    gap:13px;
+    gap:20px;
     background-color: #E7E6E9;
     border-radius: 8px;
-    padding:10px 15px;;
+    padding:10px 10px;
 }
-
-
+.nav-right>a:hover{
+    color:#e75ad4
+}
+.nav-right i:hover{
+    color:#AA40AE
+}
 /* =============================Banner Section Style=================================== */
 .bnr-sec{
     background-image: linear-gradient(90deg,#c290e4, #cfc8c8);
     height: 100vh;
+    align-items: center;
+    display: flex;
     
 }
 .bnr-conti{
@@ -92,6 +88,7 @@
 .bnr-left{
     width: 50%;
     padding:70px;
+
 }
 .goat{
     background-image: linear-gradient(180deg, #c547b0, #7632aa);
@@ -106,6 +103,10 @@
     align-items: left;
     flex-direction: column;
     gap:10px;
+}
+.bnr-icon-conti p{
+    display: flex;
+    gap:20px;
 }
 .bnr-icon{
     font-size: 20px;
@@ -122,7 +123,7 @@
 
 }
 .bnr-btn-left{
-    padding:21px 40px;
+    padding:15px 30px;
     background-color: #FF42A5;
     color:white;
     border:none;
@@ -130,7 +131,7 @@
     font-size: 20px;
 }
 .bnr-btn-right{
-    padding:21px 40px;
+    padding:15px 25px;
     background-color: #4EC5F7;
     color:white;
     border:none;
@@ -140,11 +141,11 @@
 .bnr-right img{
     width:100%;
 }
-
-
 /* =============================Gamer Section Style=================================== */
 .gamer-sec{
     background-color: #f6eef1;
+    height:60vh;
+    display:flex;
 }
 .gamer-sec-conti{
     display:flex;
@@ -160,7 +161,9 @@
 }
 
 .gamer-sec-left img{
-    width:100%;
+    display:flex;
+    width:150%;
+    align-items: center;
 }
 .gamer-sec-right{
     text-align: right;
@@ -185,9 +188,7 @@
     padding-left:85%
 }
 
-
 /* =============================Online Game Section Style=================================== */
-
 .online-game-sec-conti{
     max-width: 1440px;
     text-align: center;
@@ -213,13 +214,36 @@
     justify-content: space-around;
     margin: auto;
 }
-
-.online-game-card-conti img:hover{
-    animation-play-state: paused;
-    opacity: 0.8;
+.online-game-card{
+    position:relative;
 }
-
-
+.online-game-card img{
+    width:102%;
+    height: auto;
+}
+.game-play-icon{
+    border: 3px red solid;
+    border-radius: 12px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:84%;
+    position:absolute;
+    top:0px;
+    color: #faf7fa;
+    opacity: 0;   
+}
+.play-now{
+    color:#d7a5c5;
+    font-size:36px;
+    font-weight: bold;
+}
+.game-play-icon:hover{
+    opacity: 1;
+    background-color: #0b022342;  
+}
 /* =============================Play Game Section Style=================================== */
 .play-game-sec{
     margin-bottom: 160px;
@@ -253,26 +277,21 @@
     padding: 15px 0px;
     font-size: 20px;
 }
-
 /* ===============================Game List Sction============================================ */
 .game-list-sec{
     background-color: #ded6f0;
+    margin-top: 40px;
     
 }
-
-
 .game-list-btn-conti{
     max-width:1440px;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     gap:60px;
     padding:120px 0px;
-    
-    
-    
 }
 
 .game-list-btn{
@@ -324,7 +343,7 @@
     font-size: 20px;
     text-decoration: none;
 }
-.footer-icon{
+.footer-icon-conti{
     display: flex;
     gap:40px;
 }
@@ -339,18 +358,17 @@
     color:rgba(255, 255, 255, 0.60);
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-conti a:hover{
+    color:#DA4CC3
+}
+.footer-conti img:hover{
+    background-color:#aa40ae6d;
+    border:none;
+    border-radius: 10px;
+}
+button:hover{
+    color:#AA40AE;
+}
 
 /* =============================Respnsive Design===================================
 ===================================================================================*/
@@ -380,6 +398,9 @@
 .bnr-heading h2{
     font-size: 28px;
 }
+.gamer-sec{
+    height: auto;
+}
 .gamer-sec-conti{
     flex-direction: column;
     margin:auto
@@ -401,6 +422,7 @@
 }
 .play-game-conti{
     flex-direction: column-reverse;
+    align-items: center;
     width:90%;
     padding:0px;
 }
@@ -408,9 +430,10 @@
     width:100%;
     padding:0px;
 }
-.play-game-conti-right{
-    width:100%;
-
+.play-game-conti-right p{
+    text-align: justify;
+   
+    
 }
 .play-game-mimg img{
     width:100%;
@@ -418,24 +441,30 @@
 .play-game-cimg img{
     width:50%;
 }
-   
-
-
+.game-list-btn a{
+    text-decoration:none;
+    font-size:14px;
+   }
+.game-list-btn-conti{
+    gap:10px;
+    padding:50px 0px;
+    align-items: justify;
+    
+    
+   }
+    .game-list-btn-conti img{
+        width:30px;
+    }
+    .policy{
+        padding:0px;
+        
+    }
+    .policy a{
+        font-size: 1px;
+        padding:10px
+    }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                 /* ==For-Mobile== */
 @media screen and (max-width: 425px) {
@@ -443,10 +472,8 @@
        flex-direction:column; 
        gap:30px;
        margin: auto;
-       width:100%;
-         
+       width:100%;     
     }
-
     .nav-left{
         flex-direction: column;
         width:100%;
@@ -540,24 +567,20 @@
     .play-game-cimg img{
         width:50%;
     }
-   
    .play-games-conti-right{
     width:100%;
     padding:0px;
-    
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
    }
    .game-list-btn a{
-    color:black;
     text-decoration:none;
     font-size:12px;
    }
    .game-list-btn-conti{
-   
-    gap:5px;
+    gap:10px;
     padding:50px 0px;
     align-items: center;
     
@@ -575,25 +598,30 @@
         grid-template-columns: repeat(3,1fr);
         gap:15px
     }
-    .footer-icon
-    {
+    .footer-icon-conti{
         display:grid;
         grid-template-columns: repeat(3,1fr);
-        gap:5px;
         align-items: center;
         padding:0px;
         margin: 0px;
         justify-content:center;
         text-align: center;
     }
-
-
-
-
-
-
-
-
+    .policy a{
+        font-size: 14px;
+        padding:0px;
+    }
+    .policy{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        gap:10px;
+    }
+    .copyright{
+        text-align: center;
+        width:57%
+    }
 
 }
 
