@@ -420,6 +420,9 @@ button:hover{
     margin:auto;
     padding:15px 0px 0px 0px;
 }
+.gamer-sec-left img{
+    width:100%;
+}
 .play-game-conti{
     flex-direction: column-reverse;
     align-items: center;
@@ -491,12 +494,13 @@ button:hover{
     }
     .bnr-sec{
         margin-top:40px;
+        height: auto;
     }
 
     .bnr-conti{
         flex-direction: column-reverse;
         width:80%;
-        margin:auto
+        margin:auto;
     }
     .bnr-left{
         width: 100%;
@@ -547,6 +551,9 @@ button:hover{
     }
     .gamer-h1-bottom{
         font-size: ;
+    }
+    .gamer-sec-left img{
+        width:100%;
     }
 
    .online-game-sec-conti h1, .online-game-heading{
