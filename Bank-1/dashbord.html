@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+
+    <title>Sonali Bank Limited</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="m-0 p-0" >
+
+    <section class="w-[1280px] bg-[#1c1c9eda]  shadow-md m-auto rounded-xl p-10 h-auto">
+        <div class="flex justify-center items-center gap-6">
+            <img class="w-[150px]" src="/image/logo.png" alt="">
+            <p class="text-5xl text-white font-bold">Sonali Bank Limited</p>
+        </div>
+
+        <div class="mt-6 pl-6 pr-6">
+           <div class="flex justify-between items-center ">
+            <h2 class="text-2xl font-bold text-slate-300">Account Name: Md. Rabiul Islam</h2>
+            <a class="text-2xl text-yellow-500 font-bold hover:text-red-500" href="bank-login.html">Logout</a>
+           </div>
+           <h3 class="text-xl font-bold text-[#f9b943] mt-1">Account Number: 421270100011</h3>
+
+        </div>
+        <div class="flex gap-6 p-6 justify-between mt-10">
+            <div class="w-[300px] rounded-md pt-[36px] pb-[36px] text-center bg-[#d1d9ec2d]">
+                <h2  class="text-3xl font-bold text-slate-300">Total Deposit</h2>
+                <h3  class="text-3xl font-bold text-[#f9b943] mt-1">TK.<span id="deposit-instant">0.0</span></h3>
+            </div>
+
+            <div class="w-[300px] rounded-md pt-[36px] pb-[36px] text-center bg-[#e0d26988]">
+                <h2 class="text-3xl font-bold text-c text-slate-300">Total Withdraw</h2>
+                <h3 class="text-3xl font-bold text-[#e3c147] mt-1">TK.<span id="preWithdraw">0.0</span></h3>
+            </div>
+<!-- =======================Balance Container=========================== -->
+            <div class="w-[300px] rounded-md pt-[36px] pb-[36px] text-center bg-[#49ea4951]">
+                <h2 class="text-3xl font-bold text-slate-300">Balance</h2>
+                <h3 class="text-3xl font-bold text-[#f9b943] mt-1">TK.<span id="preBalance">0.00</span></h3>
+            </div>
+        </div>
+
+        <div class="flex gap-6 p-6 justify-between">
+            <div class="rounded-md pt-[24px] pb-[24px] text-center border-2 border-[#f9b943] flex flex-col gap-6 items-center w-[450px] ">
+                <h2 class="text-3xl font-bold text-slate-300">Deposit Now</h2>
+                <input id="deposit-input" class="w-[80%] rounded-[5px] text-xl p-2"  type="text" placeholder="Diposit Amount">
+                <button id="deposit-btn" class=" pt-2 pb-2 pl-5 pr-5  rounded-[5px] text-2xl  bg-[#f9b943] text-white font-bold hover:text-blue-700">SUBMIT<button>
+
+               
+            </div>
+            <div class="rounded-md pt-[24px] pb-[24px] text-center border-2 border-[#f9b943] flex flex-col gap-6 items-center w-[450px] ">
+                <h2 class="text-3xl font-bold text-slate-300">Withdraw Now</h2>
+                <input id="withDraw-input" class="w-[80%] rounded-[5px] text-xl p-2"  type="text" placeholder="Withdraw Amount">
+                <button id="withDraw-btn" class=" pt-2 pb-2 pl-5 pr-5  rounded-[5px] text-2xl bg-[#f9b943] text-white  font-bold hover:text-blue-700">SUBMIT<button>
+            </div>
+        </div>
+    </section>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+
+</body>
+
+</html>
